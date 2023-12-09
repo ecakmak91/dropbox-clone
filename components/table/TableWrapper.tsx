@@ -30,7 +30,7 @@ function TableWrapper({skeletonFiles}:{skeletonFiles:FileType[]}) {
     if(!docs) return
     const files:FileType[]=docs.docs.map((doc)=>({
       id:doc.id,
-      fileName:doc.data().fileName || doc.id,
+      filename:doc.data().filename || doc.id,
       timestamp:new Date(doc.data().timestamp?.seconds*1000) || undefined,
       fullName:doc.data().fullName,
       downloadURL:doc.data().downloadURL,

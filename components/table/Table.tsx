@@ -106,12 +106,12 @@ export function DataTable<TData, TValue>({
                         </div>
 
                       </div>
-                    ):cell.column.id==='fileName' ? ( 
+                    ):cell.column.id==='filename' ? ( 
                       <p 
                         onClick={()=>{
                           openRenameModal(
                           (row.original as FileType).id,
-                          (row.original as FileType).fileName)
+                          (row.original as FileType).filename)
                         }}
                       className="underline flex items-center text-blue-500 hover:cursor-pointer"
                         >
