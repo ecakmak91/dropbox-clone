@@ -15,7 +15,7 @@ async function Dashboard() {
     filename:doc.data().filename || doc.id,
     timestamp:new Date(doc.data().timestamp?.seconds*1000)||undefined,
     fullName:doc.data().fullName,
-    downloadUrl:doc.data().downloadURL,
+    downloadURL:doc.data().downloadURL,
     type:doc.data().type,
     size:doc.data().size
   }))
